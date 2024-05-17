@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-donation</title>
+    <link rel="stylesheet" type="text/css" href="testing.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <meta name="description" content="Descrição..">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Hugo Moreira">
+  
+  <link rel="stylesheet" href="./css/styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <div class="donation">
+      <h1>2 €</h1>
+    </div>
+    <br>
+      <form>
+        <input type="range" min="1" max="10">
+        <p>Doação mínima de 1€</p>
+        <div class="flex">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <p>Quero suportar as taxas da transação</p>
+        </div>
+        <h3> O PayPal tem uma taxa de 3.49% sobre o valor total, mais um custo fixo de 0.42€ </h3>
+      </form>
+      <br>
+      <br>
+      <div class="pay-logos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Logo_MBWay.svg" alt="logombway">
+          <img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png" alt="paypallogo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Paysafecard_logo.svg" alt="paysafelogo">
+        </div>
+        <br>
+        <h2>Streamer vai receber : 1.77€</h2>
+        <br>
+        <div class="phonefield">
+          <form>
+            <input id="phone" type="tel" name="phone" />
+            <script>
+              const phoneInputField = document.querySelector("#phone");
+              const phoneInput = window.intlTelInput(phoneInputField, {
+                utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+              });
+              </script>
+        </form>
+      </div>
+      <br>
+<div class="msgbox">
+<input type="text" placeholder="Mensagem"/>
+<p>70 caracteres restantes</p>
+</div>
+  </div>
+  </body>
+</html>

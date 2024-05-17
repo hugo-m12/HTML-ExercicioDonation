@@ -1,106 +1,124 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    align-content: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 19%;
+  align-content: center;
+  margin: 0 auto;
+  width: 19%;
+}
+h3{
+  text-align: center;
 }
 .donation{
-    padding: 10px;
-    border-radius: 25px;
-    width: 345px ;
-    height: 52px;
-    text-align: center;
-    border: solid 1px black ;
+  padding: 10px;
+  border-radius: 25px;
+  width: 338px ;
+  height: 52px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black ;
 }
-form input{
-    width: 345px ;
-    cursor: pointer
+form input[type="range"]{
+  width: 345px ;
+  cursor: pointer
 }
 .flex{
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
   }
   
   .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
   }
   
   .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
   }
   
   .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: rgb(14, 45, 73);
+  background-color: rgb(14, 45, 73);
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
   }
   .slider.round {
-    border-radius: 34px;
+  border-radius: 34px;
   }
   
   .slider.round:before {
-    border-radius: 50%;
+  border-radius: 50%;
   }
  img{
-    width: 70px;
-    height: 43px;
+  width: 70px;
+  height: 43px;
 }
 .pay-logos{
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 73px;
 }
 .phonefield input{
   padding: 10px;
-    border-radius: 25px;
-    width: 345px ;
-    height: 52px;
-    text-align: center;
-    border: solid 1px black ;
+  border-radius: 25px;
+  width: 359px ;
+  height: 47px;
+  text-align: center;
+  border: solid 1px black ;
 }
 .msgbox input{
   padding: 10px;
-    border-radius: 25px;
-    width: 333px ;
-    height: 120px;
-    text-align: left;
-    border: solid 1px black ;
+  border-radius: 25px;
+  width: 338px ;
+  height: 143px;
+  text-align: left;
+  border: solid 1px black ;
 }
 .msgbox p{
   color: lightgray;
-  text-align: left;
+}
+p{
+  color: gray
+}
+button{
+  color: white;
+  background-color: #6CE462;
+  padding: 10px;
+  border-radius: 25px;
+  width: 359px ;
+  height: 47px;
+  font-weight: bolder;
+  border: none;
 }
